@@ -2,7 +2,7 @@ services:
   - type: web
     name: steel-browser-api
     runtime: docker
-    dockerContext: ./api
+    dockerContext: .
     dockerfilePath: ./api/Dockerfile
     healthCheckPath: /v1/health
     envVars:
@@ -15,7 +15,7 @@ services:
   - type: web
     name: steel-browser-ui
     runtime: docker
-    dockerContext: ./ui
+    dockerContext: .
     dockerfilePath: ./ui/Dockerfile
     envVars:
       - key: NODE_ENV

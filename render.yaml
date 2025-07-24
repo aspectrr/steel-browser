@@ -21,7 +21,4 @@ services:
       - key: NODE_ENV
         value: production
       - key: API_URL
-        fromService:
-          type: web
-          name: steel-browser-api
-          property: http://steel-browser-api:10000
+        value: http://steel-browser-api:10000

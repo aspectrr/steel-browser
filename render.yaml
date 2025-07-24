@@ -24,4 +24,4 @@ services:
         fromService:
           type: web
           name: steel-browser-api
-          property: host
+          property: connectionString
